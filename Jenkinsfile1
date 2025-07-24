@@ -23,7 +23,7 @@ pipeline {
         }
         stage('SonarQube Analysis') {
             steps {
-                sh '/opt/sonarqube/bin/sonar-scanner ' +
+                sh '/opt/sonarqube/sonar-scanner ' +
                          '-Dsonar.projectName=FMCC_sonarqube_Project ' +
                          '-Dsonar.projectVersion=FMCC_sonarqube_Project ' +
                          '-Dsonar.projectKey=1.0 ' +
