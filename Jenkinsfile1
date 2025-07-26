@@ -23,7 +23,7 @@ pipeline {
         }
         stage('SonarQube Analysis') {
             steps {
-                sh 'chmod 777 /opt/sonarqube/sonar-scanner'
+                sh 'chmod 777 /opt/sonarscanner1/sonar-scanner/bin/sonar-scanner'
                 sh '/opt/sonarqube/sonar-scanner ' +
                          '-Dsonar.projectName=FMCC_sonarqube_Project ' +
                          '-Dsonar.projectVersion=FMCC_sonarqube_Project ' +
